@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'academind-forms-handling';
+  suggestUserName() {
+    const suggestedName = 'Superuser';
+  }
+
+  onSubmit(form: HTMLFormElement) {
+    console.log(form);
+  }
 }
